@@ -8,26 +8,56 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <title>Melodia</title>
   <link rel="stylesheet" href="./src/css/style.css">
-  
+
 </head>
 
 <body class="text-gray-200">
-  <header class="sticky top-0 z-50 py-3 px-5 border-b border-white/10 grid grid-cols-3">
-    <div class="flex justify-end items-center">
-      <a class="text-sm font-medium text-gray-500" href="#">Premium</a>
-    </div>
-    <div class="flex flex-col items-center justify-center gap-1">
-        <svg class="h-8 w-8" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-          <path clip-rule="evenodd"
+  <header class="sticky top-0 z-50 py-3 px-5 border-b border-white/10 grid grid-cols-3 bg-black/50 backdrop-blur-md shadow-md">
+    <div class="flex justify-start items-center">
+      <svg class="h-8 w-8" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+        <path clip-rule="evenodd"
           d="M24 8.18819L33.4123 11.574L24 15.2071L14.5877 11.574L24 8.18819ZM9 15.8487L21 20.4805V37.6263L9 32.9945V15.8487ZM27 37.6263V20.4805L39 15.8487V32.9945L27 37.6263ZM25.354 2.29885C24.4788 1.98402 23.5212 1.98402 22.646 2.29885L4.98454 8.65208C3.7939 9.08038 3 10.2097 3 11.475V34.3663C3 36.0196 4.01719 37.5026 5.55962 38.098L22.9197 44.7987C23.6149 45.0671 24.3851 45.0671 25.0803 44.7987L42.4404 38.098C43.9828 37.5026 45 36.0196 45 34.3663V11.475C45 10.2097 44.2061 9.08038 43.0155 8.65208L25.354 2.29885Z"
           fill="currentColor" fill-rule="evenodd"></path>
-        </svg>
-        <h2 class="text-xl font-bold text-gray-300">Melodia</h2>
+      </svg>
+      <h2 class="text-xl font-bold text-gray-300">Melodia</h2>
     </div>
-    <div class="flex justify-start items-center">
+    <div class="flex items-center justify-around">
+      <a class="text-sm font-medium text-gray-500" href="#">Premium</a>
       <a class="text-sm font-medium text-gray-500" href="#">Baixar</a>
+      <a class="text-sm font-medium text-gray-500" href="#">Suporte</a>
+    </div>
+    <div class="flex justify-center items-center gap-5">
+      <button
+        class="flex h-10 min-w-[84px] items-center justify-center overflow-hidden rounded-full bg-pink-950 px-4 text-sm font-bold text-white">
+        <span class="truncate">Entrar</span>
+      </button>
+      <button
+        class="flex h-10 min-w-[84px] items-center justify-center overflow-hidden rounded-full bg-pink-600 px-4 text-sm font-bold text-white hover:bg-pink-700 active:bg-pink-800">
+        <span class="truncate">Inscrever-se</span>
+      </button>
     </div>
   </header>
+  <main>
+    <section class="section-hero grid md:grid-cols-4 bg-cover bg-center bg-no-repeat min-h-[80dvh]">
+      <div class="flex flex-col p-20 justify-center gap-10">
+        <h1 class="text-6xl font-bold">Descubra <br> Sua <strong class="trilha">Trilha</strong> <br> <strong class="sonora">Sonora</strong> <br> Perfeita</h1>
+        <p class="font-light">
+          O Melodia revoluciona sua experiência musical com qualidade superior, playlists inteligentes e descobertas incríveis
+        </p>
+        <button class="hero-button text-lg p-3 rounded-full hover:brightness-[70%] active:brightness-[60%]">
+          Ouvir agora
+        </button>
+        <!-- <div class="hero-card flex flex-col gap-5 p-4 border-[1rem] border-gray-900">
+          <h3 class="font-bold">Tocando Agora</h3>
+          <div class="bg-gray-300/20 p-2 rounded-md">
+            <h4 class="text-sm">Payphone</h4>
+            <h5 class="text-xs font-light">Maroom 5</h5>
+          </div>
+        </div> -->
+      </div>
+    </section>
+  </main>
+
 </body>
 
 </html>

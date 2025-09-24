@@ -1,3 +1,33 @@
 body {
-    background-color: #161022;
+  background-color: #161022;
+}
+
+.section-hero {
+  background-image: url("../imgs/hero.png");
+}
+
+.hero-card {
+  background-image: linear-gradient(to right, #27377c, #9b3c77);
+    border-radius: 1rem;
+    width: calc(90%);
+}
+
+.hero-button {
+    background-image: linear-gradient(to right, #27377c, #9b3c77);
+    font-weight: bold;
+    width: fit-content;
+}
+
+.trilha {
+  background-image: linear-gradient(to right,#5170ff, #7451ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.sonora {
+  background-image: linear-gradient(to right,#ffa2db, #ff7ccd);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
