@@ -4,18 +4,27 @@ body {
 
 .section-hero {
   background-image: url("../imgs/hero.png");
+
 }
 
 .hero-card {
   background-image: linear-gradient(to right, #27377c, #9b3c77);
-    border-radius: 1rem;
-    width: calc(90%);
+  border-radius: 1rem;
+  width: calc(90%);
 }
 
 .hero-button {
-    background-image: linear-gradient(to right, #27377c, #9b3c77);
-    font-weight: bold;
-    width: fit-content;
+  background-image: linear-gradient(to right, #27377c, #9b3c77);
+  font-weight: bold;
+  width: fit-content;
+  box-shadow: 0 4px 15px rgba(39, 55, 124, 0.3);
+  transition: all 0.3s ease;
+}
+
+.hero-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(39, 55, 124, 0.4);
+  border-color: rgba(255, 255, 255, 0.2);
 }
 
 .trilha {
@@ -30,4 +39,12 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+}
+
+/* Additional responsive styles */
+@media (max-width: 640px) {
+   .hero-button {
+    width: 100%;
+    max-width: 200px;
+  }
 }
