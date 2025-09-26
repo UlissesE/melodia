@@ -1,597 +1,503 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="/cube.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Melodia</title>
-    <link rel="stylesheet" href="./src/css/style.css" />
-  </head>
 
-  <body class="text-gray-200">
-    <header
-      class="sticky top-0 z-50 py-3 px-5 border-b border-white/10 bg-black/50 backdrop-blur-md shadow-md"
-    >
-      <div
-        class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4"
-      >
-        <div class="flex justify-start items-center">
-          <svg
-            class="h-8 w-8"
-            fill="none"
-            viewBox="0 0 48 48"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              clip-rule="evenodd"
-              d="M24 8.18819L33.4123 11.574L24 15.2071L14.5877 11.574L24 8.18819ZM9 15.8487L21 20.4805V37.6263L9 32.9945V15.8487ZM27 37.6263V20.4805L39 15.8487V32.9945L27 37.6263ZM25.354 2.29885C24.4788 1.98402 23.5212 1.98402 22.646 2.29885L4.98454 8.65208C3.7939 9.08038 3 10.2097 3 11.475V34.3663C3 36.0196 4.01719 37.5026 5.55962 38.098L22.9197 44.7987C23.6149 45.0671 24.3851 45.0671 25.0803 44.7987L42.4404 38.098C43.9828 37.5026 45 36.0196 45 34.3663V11.475C45 10.2097 44.2061 9.08038 43.0155 8.65208L25.354 2.29885Z"
-              fill="currentColor"
-              fill-rule="evenodd"
-            ></path>
-          </svg>
-          <h2 class="text-xl font-bold text-gray-300">Melodia</h2>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="/cube.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Melodia</title>
+  <link rel="stylesheet" href="./src/css/style.css" />
+</head>
 
-        <div class="hidden sm:flex items-center justify-center gap-6">
-          <a
-            class="text-sm font-medium text-gray-500 hover:text-gray-300 transition-colors"
-            href="#"
-            >Premium</a
-          >
-          <a
-            class="text-sm font-medium text-gray-500 hover:text-gray-300 transition-colors"
-            href="#"
-            >Baixar</a
-          >
-          <a
-            class="text-sm font-medium text-gray-500 hover:text-gray-300 transition-colors"
-            href="#"
-            >Suporte</a
-          >
-        </div>
-
-        <div class="flex justify-center sm:justify-end items-center gap-3">
-          <button
-            class="flex h-10 items-center justify-center overflow-hidden rounded-full bg-pink-950 px-4 text-sm font-bold text-white hover:bg-pink-900 transition-colors"
-          >
-            <span class="truncate">Entrar</span>
-          </button>
-          <button
-            class="flex h-10 items-center justify-center overflow-hidden rounded-full bg-pink-600 px-4 text-sm font-bold text-white hover:bg-pink-700 active:bg-pink-800 transition-colors"
-          >
-            <span class="truncate">Inscrever-se</span>
-          </button>
-        </div>
+<body class="text-gray-200">
+  <header class="sticky top-0 z-50 py-3 px-5 border-b border-white/10 bg-black/50 backdrop-blur-md shadow-md">
+    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+      <div class="flex justify-start items-center">
+        <svg class="h-8 w-8" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+          <path clip-rule="evenodd"
+            d="M24 8.18819L33.4123 11.574L24 15.2071L14.5877 11.574L24 8.18819ZM9 15.8487L21 20.4805V37.6263L9 32.9945V15.8487ZM27 37.6263V20.4805L39 15.8487V32.9945L27 37.6263ZM25.354 2.29885C24.4788 1.98402 23.5212 1.98402 22.646 2.29885L4.98454 8.65208C3.7939 9.08038 3 10.2097 3 11.475V34.3663C3 36.0196 4.01719 37.5026 5.55962 38.098L22.9197 44.7987C23.6149 45.0671 24.3851 45.0671 25.0803 44.7987L42.4404 38.098C43.9828 37.5026 45 36.0196 45 34.3663V11.475C45 10.2097 44.2061 9.08038 43.0155 8.65208L25.354 2.29885Z"
+            fill="currentColor" fill-rule="evenodd"></path>
+        </svg>
+        <h2 class="text-xl font-bold text-gray-300">Melodia</h2>
       </div>
-    </header>
-    <main>
-      <section
-        class="section-hero grid md:grid-cols-4 bg-cover bg-center bg-no-repeat min-h-[80dvh]"
-      >
-        <div
-          class="container flex flex-col justify-center gap-8 px-6 py-12 sm:py-20 sm:px-8 lg:px-12"
-        >
-          <h1 class="text-6xl font-bold">
-            <span
-              class="bg-gradient-to-r from-indigo-400 to-pink-400 bg-clip-text text-transparent"
-              ><strong>Melodia</strong></span
-            >
-            <br />
-            Sua música, Sua forma
-          </h1>
-          <p
-            class="font-light text-slate-300 text-base sm:text-lg max-w-2xl leading-relaxed"
-          >
-            O Melodia revoluciona sua experiência musical com qualidade
-            superior, playlists inteligentes e descobertas incríveis!
-          </p>
-          <button
-            class="hero-button text-base sm:text-lg p-3 sm:p-4 rounded-full hover:brightness-[70%] active:brightness-[60%] transition-all hover:scale-105 flex items-center justify-center sm:justify-start w-fit"
-          >
-            <svg
-              class="inline-block mr-2 w-5 h-5"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path d="M8 5v14l11-7z" />
-            </svg>
-            Ouvir Agora
-          </button>
-          <!-- <div class="hero-card flex flex-col gap-5 p-4 border-[1rem] border-gray-900">
+
+      <div class="hidden sm:flex items-center justify-center gap-6">
+        <a class="text-sm font-medium text-gray-500 hover:text-gray-300 transition-colors" href="#">Premium</a>
+        <a class="text-sm font-medium text-gray-500 hover:text-gray-300 transition-colors" href="#">Baixar</a>
+        <a class="text-sm font-medium text-gray-500 hover:text-gray-300 transition-colors" href="#">Suporte</a>
+      </div>
+
+      <div class="flex justify-center sm:justify-end items-center gap-3">
+        <button
+          class="flex h-10 items-center justify-center overflow-hidden rounded-full bg-pink-950 px-4 text-sm font-bold text-white hover:bg-pink-900 transition-colors">
+          <span class="truncate">Entrar</span>
+        </button>
+        <button
+          class="flex h-10 items-center justify-center overflow-hidden rounded-full bg-pink-600 px-4 text-sm font-bold text-white hover:bg-pink-700 active:bg-pink-800 transition-colors">
+          <span class="truncate">Inscrever-se</span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="section-hero grid md:grid-cols-4 bg-cover bg-center bg-no-repeat min-h-[80dvh]">
+      <div class="container flex flex-col justify-center gap-8 px-6 py-12 sm:py-20 sm:px-8 lg:px-12">
+        <h1 class="text-6xl font-bold">
+          <span
+            class="bg-gradient-to-r from-indigo-400 to-pink-400 bg-clip-text text-transparent"><strong>Melodia</strong></span>
+          <br />
+          Sua música, Sua forma
+        </h1>
+        <p class="font-light text-slate-300 text-base sm:text-lg max-w-2xl leading-relaxed">
+          O Melodia revoluciona sua experiência musical com qualidade
+          superior, playlists inteligentes e descobertas incríveis!
+        </p>
+        <button
+          class="hero-button text-base sm:text-lg p-3 sm:p-4 rounded-full hover:brightness-[70%] active:brightness-[60%] transition-all hover:scale-105 flex items-center justify-center sm:justify-start w-fit">
+          <svg class="inline-block mr-2 w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M8 5v14l11-7z" />
+          </svg>
+          Ouvir Agora
+        </button>
+        <!-- <div class="hero-card flex flex-col gap-5 p-4 border-[1rem] border-gray-900">
           <h3 class="font-bold">Tocando Agora</h3>
           <div class="bg-gray-300/20 p-2 rounded-md">
             <h4 class="text-sm">Payphone</h4>
             <h5 class="text-xs font-light">Maroom 5</h5>
           </div>
         </div> -->
-        </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="py-12 sm:py-16 md:py-20">
-        <div class="container mx-auto px-6">
-          <div class="text-center mb-16">
-            <h2
-              class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6"
-            >
-              Por que escolher o
-              <span
-                class="bg-gradient-to-r from-indigo-400 to-pink-400 bg-clip-text text-transparent"
-                >Melodia?</span
-              >
-            </h2>
-            <p
-              class="text-base sm:text-lg md:text-xl text-slate-300 max-w-3xl mx-auto"
-            >
-              Descubra os recursos que tornam sua experiência musical única e
-              inesquecível
+    <section class="py-12 sm:py-16 md:py-20">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
+            Por que escolher o
+            <span class="bg-gradient-to-r from-indigo-400 to-pink-400 bg-clip-text text-transparent">Melodia?</span>
+          </h2>
+          <p class="text-base sm:text-lg md:text-xl text-slate-300 max-w-3xl mx-auto">
+            Descubra os recursos que tornam sua experiência musical única e
+            inesquecível
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+          <div
+            class="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-8 text-center hover:transform hover:scale-105 transition-all duration-300 border border-slate-700 hover:border-indigo-500">
+            <div
+              class="bg-gradient-to-r from-indigo-600 to-purple-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3">
+                </path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-white mb-4">
+              Qualidade de Som Superior
+            </h3>
+            <p class="text-slate-300">
+              Áudio em alta definição que transforma cada nota em uma
+              experiência única
             </p>
           </div>
 
           <div
-            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8"
-          >
+            class="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-8 text-center hover:transform hover:scale-105 transition-all duration-300 border border-slate-700 hover:border-pink-500">
             <div
-              class="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-8 text-center hover:transform hover:scale-105 transition-all duration-300 border border-slate-700 hover:border-indigo-500"
-            >
-              <div
-                class="bg-gradient-to-r from-indigo-600 to-purple-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6"
-              >
-                <svg
-                  class="w-8 h-8 text-white"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"
-                  ></path>
-                </svg>
-              </div>
-              <h3 class="text-xl font-semibold text-white mb-4">
-                Qualidade de Som Superior
-              </h3>
-              <p class="text-slate-300">
-                Áudio em alta definição que transforma cada nota em uma
-                experiência única
-              </p>
+              class="bg-gradient-to-r from-pink-600 to-orange-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3">
+                </path>
+              </svg>
             </div>
 
+            <h3 class="text-xl font-semibold text-white mb-4">
+              Playlists Personalizadas
+            </h3>
+
+            <p class="text-slate-300">
+              IA inteligente que cria playlists perfeitas baseadas no seu
+              gosto musical
+            </p>
+          </div>
+
+          <div
+            class="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-8 text-center hover:transform hover:scale-105 transition-all duration-300 border border-slate-700 hover:border-purple-500">
             <div
-              class="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-8 text-center hover:transform hover:scale-105 transition-all duration-300 border border-slate-700 hover:border-pink-500"
-            >
-              <div
-                class="bg-gradient-to-r from-pink-600 to-orange-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6"
-              >
-                <svg
-                  class="w-8 h-8 text-white"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"
-                  ></path>
-                </svg>
-              </div>
+              class="bg-gradient-to-r from-purple-600 to-indigo-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-white mb-4">
+              Descoberta de Novos Artistas
+            </h3>
+            <p class="text-slate-300">
+              Encontre talentos emergentes e expanda seus horizontes musicais
+            </p>
+          </div>
 
-              <h3 class="text-xl font-semibold text-white mb-4">
-                Playlists Personalizadas
-              </h3>
-
-              <p class="text-slate-300">
-                IA inteligente que cria playlists perfeitas baseadas no seu
-                gosto musical
-              </p>
+          <div
+            class="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-8 text-center hover:transform hover:scale-105 transition-all duration-300 border border-slate-700 hover:border-orange-500">
+            <div
+              class="bg-gradient-to-r from-orange-600 to-pink-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+              </svg>
             </div>
 
-            <div
-              class="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-8 text-center hover:transform hover:scale-105 transition-all duration-300 border border-slate-700 hover:border-purple-500"
-            >
-              <div
-                class="bg-gradient-to-r from-purple-600 to-indigo-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6"
-              >
-                <svg
-                  class="w-8 h-8 text-white"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                  ></path>
-                </svg>
-              </div>
-              <h3 class="text-xl font-semibold text-white mb-4">
-                Descoberta de Novos Artistas
-              </h3>
-              <p class="text-slate-300">
-                Encontre talentos emergentes e expanda seus horizontes musicais
-              </p>
-            </div>
-
-            <div
-              class="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-8 text-center hover:transform hover:scale-105 transition-all duration-300 border border-slate-700 hover:border-orange-500"
-            >
-              <div
-                class="bg-gradient-to-r from-orange-600 to-pink-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6"
-              >
-                <svg
-                  class="w-8 h-8 text-white"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"
-                  ></path>
-                </svg>
-              </div>
-
-              <h3 class="text-xl font-semibold text-white mb-4">
-                Interface Intuitiva
-              </h3>
-              <p class="text-slate-300">
-                Design elegante e navegação fluida para uma experiência sem
-                complicações
-              </p>
-            </div>
+            <h3 class="text-xl font-semibold text-white mb-4">
+              Interface Intuitiva
+            </h3>
+            <p class="text-slate-300">
+              Design elegante e navegação fluida para uma experiência sem
+              complicações
+            </p>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="py-20 bg-slate-900/30">
-        <div class="mx-auto max-w-3xl text-center">
-          <h2
-            class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6"
-          >
-            <span
-              class="bg-gradient-to-r from-indigo-400 to-pink-400 bg-clip-text text-transparent"
-              >Descubra</span
-            >
-            novos artistas
-          </h2>
-          <p class="mt-4 text-lg text-gray-600 dark:text-gray-400">
-            Explore músicas de artistas emergentes e encontre suas novas faixas
-            favoritas.
-          </p>
-        </div>
+    <section class="py-20 bg-slate-900/30">
+      <div class="mx-auto max-w-3xl text-center">
+        <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
+          <span class="bg-gradient-to-r from-indigo-400 to-pink-400 bg-clip-text text-transparent">Descubra</span>
+          novos artistas
+        </h2>
+        <p class="mt-4 text-lg text-gray-600 dark:text-gray-400">
+          Explore músicas de artistas emergentes e encontre suas novas faixas
+          favoritas.
+        </p>
+      </div>
 
-        <div class="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          <div
-            class="group flex flex-col gap-3 items-center hover:transform hover:scale-105 transition-all duration-300"
-          >
-            <div
-              class="w-3/4 overflow-hidden rounded-lg bg-center bg-no-repeat aspect-square bg-cover"
-              style="
+      <div class="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="group flex flex-col gap-3 items-center hover:transform hover:scale-105 transition-all duration-300">
+          <div class="w-3/4 overflow-hidden rounded-lg bg-center bg-no-repeat aspect-square bg-cover" style="
                 background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCd93I6Qm2jj6UFByBKoVpznLEwuZ6P6uIYy1JqA50IeXh9vnGR0wIRFlL0K9NfkzJKXYXDZS7MqLuHTlZev_4AhSXNcoqtF7yMdAlN0PXuODx2Te5FJwazjpNV5Fqc4ey_15ocdjfzmVYh3ui2X-js5z1I2fzPN_TpJagyaQDNcVDEveujkQOV33WdCruSgfC9sNpqdfAf1xvx7GcbJEN0vCWLmEKLxq_zV-jQXUczQSh1Akz4McFiGNTkNpMfjqF-KXEUoBdzgkzq');
-              "
-            ></div>
+              "></div>
 
-            <div>
-              <p class="text-base font-semibold text-gray-900 dark:text-white">
-                Indie Rocks
-              </p>
-              <p class="text-sm text-gray-600 dark:text-gray-400">
-                Descubra as últimas tendências do rock independente.
-              </p>
-            </div>
+          <div>
+            <p class="text-base font-semibold text-gray-900 dark:text-white">
+              Indie Rocks
+            </p>
+            <p class="text-sm text-gray-600 dark:text-gray-400">
+              Descubra as últimas tendências do rock independente.
+            </p>
           </div>
+        </div>
 
-          <div
-            class="group flex flex-col gap-3 items-center hover:transform hover:scale-105 transition-all duration-300"
-          >
-            <div
-              class="w-3/4 overflow-hidden rounded-lg bg-center bg-no-repeat aspect-square bg-cover"
-              style="
+        <div class="group flex flex-col gap-3 items-center hover:transform hover:scale-105 transition-all duration-300">
+          <div class="w-3/4 overflow-hidden rounded-lg bg-center bg-no-repeat aspect-square bg-cover" style="
                 background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDk_UGOyq_U4OsDMYbw23s20QXuuPaQn3ZlokchiMLeVbKblndjF_L9TnNCMIFURQiCWxVtmTVM9UC9Xwi-M443kyjR3m4y9ZrSt1cCB_E7MdYNUcL-6p06_UF9nlacTDCbqRT3CUFk7UpXtzkGi67ERfD_PIUOXiv-AqOgedHi6BDGCS0shBjoUCCO2v-XY5Ci43lOMry43_oWGVAjFkiMAZp7vcU5nfBWtoSAEaIVsPbGhZc6I9T2gEC5sk9Gehe-xPXqemWv3lwb');
-              "
-            ></div>
+              "></div>
 
-            <div>
-              <p class="text-base font-semibold text-gray-900 dark:text-white">
-                Eletrônica
-              </p>
-              <p class="text-sm text-gray-600 dark:text-gray-400">
-                Mergulhe nos batidões e melodias da música eletrônica.
-              </p>
-            </div>
+          <div>
+            <p class="text-base font-semibold text-gray-900 dark:text-white">
+              Eletrônica
+            </p>
+            <p class="text-sm text-gray-600 dark:text-gray-400">
+              Mergulhe nos batidões e melodias da música eletrônica.
+            </p>
           </div>
+        </div>
 
-          <div
-            class="group flex flex-col gap-3 items-center hover:transform hover:scale-105 transition-all duration-300"
-          >
-            <div
-              class="w-3/4 overflow-hidden rounded-lg bg-center bg-no-repeat aspect-square bg-cover"
-              style="
+        <div class="group flex flex-col gap-3 items-center hover:transform hover:scale-105 transition-all duration-300">
+          <div class="w-3/4 overflow-hidden rounded-lg bg-center bg-no-repeat aspect-square bg-cover" style="
                 background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAUR4LdVcOwgPOvKozKpv4rr3L356fHl6b9gQCoWitwP7Na7CPlEZD2Gx92wZZyRxOF49cH-bjmKpYFtstiaRrwAZX-eHt4HIx7Lxb-fH1Kb_Zu-uvusmM83smSZs31peMUGfm6Lri5Uz7lyUxjxg9VV4DZW5EGdqOwJdcfhZRhXp5fN_sCX9G6Cu_9hyvF2gGHCkXKZ1u1sq1MUSnZYtZ_3Mw50vVuYo-FYgvlth0l1Cwrbdnfxpu8IdxtPW6J6yAqKxKarkNJci2Y');
-              "
-            ></div>
+              "></div>
 
-            <div>
-              <p class="text-base font-semibold text-gray-900 dark:text-white">
-                Hip Hop
-              </p>
-              <p class="text-sm text-gray-600 dark:text-gray-400">
-                Explore as batidas e rimas do hip hop underground.
-              </p>
-            </div>
+          <div>
+            <p class="text-base font-semibold text-gray-900 dark:text-white">
+              Hip Hop
+            </p>
+            <p class="text-sm text-gray-600 dark:text-gray-400">
+              Explore as batidas e rimas do hip hop underground.
+            </p>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="py-20">
-        <div class="container mx-auto px-6">
-          <div class="text-center mb-16">
-            <h2 class="text-4xl lg:text-5xl font-bold text-white mb-6">
-              Recursos que
-              <span
-                class="bg-gradient-to-r from-indigo-400 to-pink-400 bg-clip-text text-transparent"
-                >Elevam Sua Experiência</span
-              >
-            </h2>
+    <section class="py-20">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl lg:text-5xl font-bold text-white mb-6">
+            Recursos que
+            <span class="bg-gradient-to-r from-indigo-400 to-pink-400 bg-clip-text text-transparent">Elevam Sua
+              Experiência</span>
+          </h2>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-12 items-center mb-16">
+          <div>
+            <h3 class="text-3xl font-bold text-white mb-6">
+              Streaming de Alta Qualidade
+            </h3>
+            <p class="text-lg text-slate-300 mb-6">
+              Experimente cada detalhe musical com nossa tecnologia de áudio
+              avançada. Suporte para formatos lossless e qualidade de estúdio
+              que revela nuances que você nunca ouviu antes.
+            </p>
+            <ul class="space-y-3 text-slate-300">
+              <li class="flex items-center">
+                <div class="w-2 h-2 bg-indigo-500 rounded-full mr-3"></div>
+                Áudio Hi-Fi até 24-bit/192kHz
+              </li>
+
+              <li class="flex items-center">
+                <div class="w-2 h-2 bg-pink-500 rounded-full mr-3"></div>
+                Compressão inteligente sem perda de qualidade
+              </li>
+
+              <li class="flex items-center">
+                <div class="w-2 h-2 bg-purple-500 rounded-full mr-3"></div>
+                Equalização automática por dispositivo
+              </li>
+            </ul>
           </div>
 
-          <div class="grid lg:grid-cols-2 gap-12 items-center mb-16">
-            <div>
-              <h3 class="text-3xl font-bold text-white mb-6">
-                Streaming de Alta Qualidade
-              </h3>
-              <p class="text-lg text-slate-300 mb-6">
-                Experimente cada detalhe musical com nossa tecnologia de áudio
-                avançada. Suporte para formatos lossless e qualidade de estúdio
-                que revela nuances que você nunca ouviu antes.
-              </p>
-              <ul class="space-y-3 text-slate-300">
-                <li class="flex items-center">
-                  <div class="w-2 h-2 bg-indigo-500 rounded-full mr-3"></div>
-                  Áudio Hi-Fi até 24-bit/192kHz
-                </li>
-
-                <li class="flex items-center">
-                  <div class="w-2 h-2 bg-pink-500 rounded-full mr-3"></div>
-                  Compressão inteligente sem perda de qualidade
-                </li>
-
-                <li class="flex items-center">
-                  <div class="w-2 h-2 bg-purple-500 rounded-full mr-3"></div>
-                  Equalização automática por dispositivo
-                </li>
-              </ul>
-            </div>
-
-            <div
-              class="bg-gradient-to-br from-slate-800 to-slate-900 rounded-3xl p-8 border border-slate-700"
-            >
-              <div
-                class="bg-gradient-to-r from-indigo-600 to-pink-600 rounded-2xl p-6 text-white"
-              >
-                <div class="flex items-center justify-between mb-4">
-                  <span class="text-sm font-medium">QUALIDADE</span>
-                  <Volume2 size="{20}" />
-                </div>
-
-                <div class="text-2xl font-bold mb-2">Hi-Fi Lossless</div>
-                <div class="text-sm opacity-80">24-bit • 192 kHz</div>
-
-                <div class="mt-4 space-y-2">
-                  <div class="flex justify-between text-sm">
-                    <span>Graves</span>
-                    <span>+3dB</span>
-                  </div>
-
-                  <div class="flex justify-between text-sm">
-                    <span>Médios</span>
-                    <span>+1dB</span>
-                  </div>
-
-                  <div class="flex justify-between text-sm">
-                    <span>Agudos</span>
-                    <span>+2dB</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="grid lg:grid-cols-2 gap-12 items-center mb-16">
-            <div class="order-2 lg:order-1">
-              <div
-                class="bg-gradient-to-br from-slate-800 to-slate-900 rounded-3xl p-8 border border-slate-700"
-              >
-                <div
-                  class="bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl p-6 text-white"
-                >
-                  <h4 class="text-lg font-semibold mb-4">
-                    Recomendações para Você
-                  </h4>
-
-                  <div class="space-y-3">
-                    <div class="bg-white/20 rounded-lg p-3 flex items-center">
-                      <div class="w-10 h-10 bg-white/30 rounded-lg mr-3"></div>
-
-                      <div>
-                        <p class="font-medium text-sm">Mix Indie Rock</p>
-                        <p class="text-xs opacity-80">Baseado em seus gostos</p>
-                      </div>
-                    </div>
-
-                    <div class="bg-white/20 rounded-lg p-3 flex items-center">
-                      <div class="w-10 h-10 bg-white/30 rounded-lg mr-3"></div>
-                      <div>
-                        <p class="font-medium text-sm">Descobertas da Semana</p>
-                        <p class="text-xs opacity-80">
-                          Novos artistas para você
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="order-1 lg:order-2">
-              <h3 class="text-3xl font-bold text-white mb-6">
-                Recomendações Inteligentes
-              </h3>
-              <p class="text-lg text-slate-300 mb-6">
-                Nossa IA analisa seus hábitos musicais, horários de escuta e
-                preferências para criar recomendações personalizadas que evoluem
-                com seu gosto.
-              </p>
-
-              <ul class="space-y-3 text-slate-300">
-                <li class="flex items-center">
-                  <div class="w-2 h-2 bg-purple-500 rounded-full mr-3"></div>
-                  Análise de padrões de escuta
-                </li>
-
-                <li class="flex items-center">
-                  <div class="w-2 h-2 bg-pink-500 rounded-full mr-3"></div>
-                  Recomendações baseadas em contexto
-                </li>
-
-                <li class="flex items-center">
-                  <div class="w-2 h-2 bg-indigo-500 rounded-full mr-3"></div>
-                  Descoberta de artistas similares
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="grid lg:grid-cols-2 gap-12 items-center mb-16">
-            <div>
-              <h3 class="text-3xl font-bold text-white mb-6">Modo Offline</h3>
-              <p class="text-lg text-slate-300 mb-6">
-                Baixe suas músicas favoritas e ouça onde quiser, mesmo sem
-                conexão com a internet. Sua música sempre com você, em qualquer
-                lugar.
-              </p>
-
-              <ul class="space-y-3 text-slate-300">
-                <li class="flex items-center">
-                  <div class="w-2 h-2 bg-indigo-500 rounded-full mr-3"></div>
-                  Download de alta qualidade
-                </li>
-
-                <li class="flex items-center">
-                  <div class="w-2 h-2 bg-pink-500 rounded-full mr-3"></div>
-                  Sincronização automática
-                </li>
-
-                <li class="flex items-center">
-                  <div class="w-2 h-2 bg-purple-500 rounded-full mr-3"></div>
-                  Gestão inteligente de armazenamento
-                </li>
-              </ul>
-            </div>
-
-            <div
-              class="bg-gradient-to-br from-slate-800 to-slate-900 rounded-3xl p-8 border border-slate-700"
-            >
-              <div
-                class="bg-gradient-to-r from-green-600 to-blue-600 rounded-2xl p-6 text-white"
-              >
-                <div class="flex items-center justify-between mb-4">
-                  <span class="text-sm font-medium">OFFLINE</span>
-                  <Smartphone size="{20}" />
-                </div>
-
-                <div class="text-2xl font-bold mb-2">1.247 Músicas</div>
-                <div class="text-sm opacity-80">Disponíveis offline</div>
-                <div class="mt-4">
-                  <div class="flex justify-between text-sm mb-2">
-                    <span>Espaço usado</span>
-                    <span>2.3 GB</span>
-                  </div>
-
-                  <div class="w-full bg-white/20 rounded-full h-2">
-                    <div class="bg-white rounded-full h-2 w-3/4"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="grid lg:grid-cols-2 gap-12 items-center">
-            <div class="order-2 lg:order-1">
-              <div
-                class="bg-gradient-to-br from-slate-800 to-slate-900 rounded-3xl p-8 border border-slate-700"
-              >
-                <div
-                  class="bg-gradient-to-r from-orange-600 to-red-600 rounded-2xl p-6 text-white"
-                >
-                  <h4 class="text-lg font-semibold mb-4">Seus Dispositivos</h4>
-
-                  <div class="space-y-3">
-                    <div
-                      class="bg-white/20 rounded-lg p-3 flex items-center justify-between"
-                    >
-                      <div class="flex items-center">
-                        <Smartphone size="{16}" class="mr-2" />
-                        <span class="text-sm">iPhone</span>
-                      </div>
-
-                      <span class="text-xs opacity-80">Ativo</span>
-                    </div>
-
-                    <div
-                      class="bg-white/20 rounded-lg p-3 flex items-center justify-between"
-                    >
-                      <div class="flex items-center">
-                        <Smartphone size="{16}" class="mr-2" />
-                        <span class="text-sm">MacBook</span>
-                      </div>
-
-                      <span class="text-xs opacity-80">Sincronizado</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="order-1 lg:order-2">
-              <h3 class="text-3xl font-bold text-white mb-6">
-                Sincronização Multi-dispositivo
-              </h3>
-              <p class="text-lg text-slate-300 mb-6">
-                Comece a ouvir no seu telefone e continue no computador. Suas
-                playlists, histórico e preferências sempre sincronizados em
-                todos os seus dispositivos.
-              </p>
-
-              <ul class="space-y-3 text-slate-300">
-                <li class="flex items-center">
-                  <div class="w-2 h-2 bg-orange-500 rounded-full mr-3"></div>
-                  Sincronização em tempo real
-                </li>
-
-                <li class="flex items-center">
-                  <div class="w-2 h-2 bg-red-500 rounded-full mr-3"></div>
-                  Continuidade entre dispositivos
-                </li>
-
-                <li class="flex items-center">
-                  <div class="w-2 h-2 bg-pink-500 rounded-full mr-3"></div>
-                  Backup automático na nuvem
-                </li>
-              </ul>
-            </div>
+          <div class="bg-gradient-to-br from-slate-800 to-slate-900 rounded-3xl p-8 border border-slate-700">
+            <img src="./src/imgs/sound-quality.png" alt="" class=" h-auto">
           </div>
         </div>
-      </section>
-    </main>
-  </body>
+
+        <div class="grid lg:grid-cols-2 gap-12 items-center mb-16">
+          <div class="order-2 lg:order-1">
+            <div class="bg-gradient-to-br from-slate-800 to-slate-900 rounded-3xl p-8 border border-slate-700">
+              <img src="./src/imgs/recomendacoes.png" alt="">
+            </div>
+          </div>
+
+          <div class="order-1 lg:order-2">
+            <h3 class="text-3xl font-bold text-white mb-6">
+              Recomendações Inteligentes
+            </h3>
+            <p class="text-lg text-slate-300 mb-6">
+              Nossa IA analisa seus hábitos musicais, horários de escuta e
+              preferências para criar recomendações personalizadas que evoluem
+              com seu gosto.
+            </p>
+
+            <ul class="space-y-3 text-slate-300">
+              <li class="flex items-center">
+                <div class="w-2 h-2 bg-purple-500 rounded-full mr-3"></div>
+                Análise de padrões de escuta
+              </li>
+
+              <li class="flex items-center">
+                <div class="w-2 h-2 bg-pink-500 rounded-full mr-3"></div>
+                Recomendações baseadas em contexto
+              </li>
+
+              <li class="flex items-center">
+                <div class="w-2 h-2 bg-indigo-500 rounded-full mr-3"></div>
+                Descoberta de artistas similares
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-12 items-center mb-16">
+          <div>
+            <h3 class="text-3xl font-bold text-white mb-6">Modo Offline</h3>
+            <p class="text-lg text-slate-300 mb-6">
+              Baixe suas músicas favoritas e ouça onde quiser, mesmo sem
+              conexão com a internet. Sua música sempre com você, em qualquer
+              lugar.
+            </p>
+
+            <ul class="space-y-3 text-slate-300">
+              <li class="flex items-center">
+                <div class="w-2 h-2 bg-indigo-500 rounded-full mr-3"></div>
+                Download de alta qualidade
+              </li>
+
+              <li class="flex items-center">
+                <div class="w-2 h-2 bg-pink-500 rounded-full mr-3"></div>
+                Sincronização automática
+              </li>
+
+              <li class="flex items-center">
+                <div class="w-2 h-2 bg-purple-500 rounded-full mr-3"></div>
+                Gestão inteligente de armazenamento
+              </li>
+            </ul>
+          </div>
+
+          <div class="bg-gradient-to-br from-slate-800 to-slate-900 rounded-3xl p-8 border border-slate-700">
+            <img src="./src/imgs/offline.png" alt="">
+          </div>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div class="order-2 lg:order-1">
+            <div class="bg-gradient-to-br from-slate-800 to-slate-900 rounded-3xl p-8 border border-slate-700">
+              <img src="./src/imgs/sync.png" alt="">
+            </div>
+          </div>
+
+          <div class="order-1 lg:order-2">
+            <h3 class="text-3xl font-bold text-white mb-6">
+              Sincronização Multi-dispositivo
+            </h3>
+            <p class="text-lg text-slate-300 mb-6">
+              Comece a ouvir no seu telefone e continue no computador. Suas
+              playlists, histórico e preferências sempre sincronizados em
+              todos os seus dispositivos.
+            </p>
+
+            <ul class="space-y-3 text-slate-300">
+              <li class="flex items-center">
+                <div class="w-2 h-2 bg-orange-500 rounded-full mr-3"></div>
+                Sincronização em tempo real
+              </li>
+
+              <li class="flex items-center">
+                <div class="w-2 h-2 bg-red-500 rounded-full mr-3"></div>
+                Continuidade entre dispositivos
+              </li>
+
+              <li class="flex items-center">
+                <div class="w-2 h-2 bg-pink-500 rounded-full mr-3"></div>
+                Backup automático na nuvem
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="p-10 sm:py-1">
+      <div class="mx-auto max-w-3xl text-center">
+        <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">O que nossos usuários
+          dizem</h2>
+      </div>
+      <div class="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div class="flex flex-col gap-4 rounded-lg bg-white/5 p-6 ring-1 ring-inset ring-white/10 dark:bg-white/5">
+          <div class="flex items-center gap-3">
+            <img alt="Foto de Sofia Almeida" class="h-10 w-10 rounded-full object-cover"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcGNg_azOef71vUj6QFXLMmZQdTt-2ws_KO7vQaxtpEMkZUqWoRfpcrKswhlNNkir84pCsTpsL-F9ts5Z2k9iYm-tonk8R8hAUp4EhlIIszzDlkDOgOMiHXyIE8O2h7ZffjtKwP8cEyx4K6nMwTKcUrAYmi0fOAsInOcIzcX7_mBbaBIImyHvzzkd9qMyRyw9ErdH35kMDhnbuY0bIyCzI4qlWM5dRkqhA83wmqUNMhecCfl1Dv4Cdp_eF04wvxqyY6hmi4TWDYe8-" />
+            <div>
+              <p class="text-sm font-semibold text-gray-900 dark:text-white">Sofia Almeida</p>
+              <p class="text-xs text-gray-600 dark:text-gray-400">2 meses atrás</p>
+            </div>
+          </div>
+          <div class="flex gap-0.5">
+            <svg class="h-5 w-5 text-primary" fill="currentColor" viewBox="0 0 256 256">
+              <path
+                d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z">
+              </path>
+            </svg>
+            <svg class="h-5 w-5 text-primary" fill="currentColor" viewBox="0 0 256 256">
+              <path
+                d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z">
+              </path>
+            </svg>
+            <svg class="h-5 w-5 text-primary" fill="currentColor" viewBox="0 0 256 256">
+              <path
+                d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z">
+              </path>
+            </svg>
+            <svg class="h-5 w-5 text-primary" fill="currentColor" viewBox="0 0 256 256">
+              <path
+                d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z">
+              </path>
+            </svg>
+            <svg class="h-5 w-5 text-primary" fill="currentColor" viewBox="0 0 256 256">
+              <path
+                d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z">
+              </path>
+            </svg>
+          </div>
+          <p class="text-sm text-gray-600 dark:text-gray-400">"Melodia transformou a maneira como ouço música. A
+            variedade de artistas e a qualidade do som são incríveis!"</p>
+        </div>
+        <div class="flex flex-col gap-4 rounded-lg bg-white/5 p-6 ring-1 ring-inset ring-white/10 dark:bg-white/5">
+          <div class="flex items-center gap-3">
+            <img alt="Foto de Lucas Pereira" class="h-10 w-10 rounded-full object-cover"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAo6xSVABMeVo6jmbyaOhhK8-iDrlD7fm28lFuzfPpt-ioP86XixNbW6L9_5rS-86OWTj0zXDqU5mEcv3pCOGcE7DXRScz5XYcAexUrJrsRJ2Jf8pnyaXTG_lzgkk7V4duXnERIwXJBQZjSM2iONcIFJKC1wu5Ez2LfRz8NftC9ASRch4RcB3L3nYIeso26zK_2ZCwjLi6MZOkG_YVAasXWXqDcFjFvcQG4g_wYKc9R99KizHUOUrXjF_zzuNPwoCLHYj7EFy4pPUQj" />
+            <div>
+              <p class="text-sm font-semibold text-gray-900 dark:text-white">Lucas Pereira</p>
+              <p class="text-xs text-gray-600 dark:text-gray-400">3 meses atrás</p>
+            </div>
+          </div>
+          <div class="flex gap-0.5">
+            <svg class="h-5 w-5 text-primary" fill="currentColor" viewBox="0 0 256 256">
+              <path
+                d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z">
+              </path>
+            </svg>
+            <svg class="h-5 w-5 text-primary" fill="currentColor" viewBox="0 0 256 256">
+              <path
+                d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z">
+              </path>
+            </svg>
+            <svg class="h-5 w-5 text-primary" fill="currentColor" viewBox="0 0 256 256">
+              <path
+                d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z">
+              </path>
+            </svg>
+            <svg class="h-5 w-5 text-primary" fill="currentColor" viewBox="0 0 256 256">
+              <path
+                d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z">
+              </path>
+            </svg>
+            <svg class="h-5 w-5 text-gray-300 dark:text-gray-600" fill="currentColor" viewBox="0 0 256 256">
+              <path
+                d="M239.2,97.29a16,16,0,0,0-13.81-11L166,81.17,142.72,25.81h0a15.95,15.95,0,0,0-29.44,0L90.07,81.17,30.61,86.32a16,16,0,0,0-9.11,28.06L66.61,153.8,53.09,212.34a16,16,0,0,0,23.84,17.34l51-31,51.11,31a16,16,0,0,0,23.84-17.34l-13.51-58.6,45.1-39.36A16,16,0,0,0,239.2,97.29Zm-15.22,5-45.1,39.36a16,16,0,0,0-5.08,15.71L187.35,216v0l-51.07-31a15.9,15.9,0,0,0-16.54,0l-51,31h0L82.2,157.4a16,16,0,0,0-5.08-15.71L32,102.35a.37.37,0,0,1,0-.09l59.44-5.14a16,16,0,0,0,13.35-9.75L128,32.08l23.2,55.29a16,16,0,0,0,13.35,9.75L224,102.26S224,102.32,224,102.33Z">
+              </path>
+            </svg>
+          </div>
+          <p class="text-sm text-gray-600 dark:text-gray-400">"O aplicativo é muito intuitivo e fácil de usar. Adoro as
+            recomendações personalizadas!"</p>
+        </div>
+        <div class="flex flex-col gap-4 rounded-lg bg-white/5 p-6 ring-1 ring-inset ring-white/10 dark:bg-white/5">
+          <div class="flex items-center gap-3">
+            <img alt="Foto de Isabela Costa" class="h-10 w-10 rounded-full object-cover"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDv2CAwy8daNoikIs3AD27yqVzMNAoKtvP3P4QwJpt5LuQQG3oZJcqQnw-vpm1ZTfy7BCNvhqYHJ9FJHu0IVVk8LP8ELcvIUht7jtqa-zBSwHNZHny55sRV21RBT5uPT0CnquyjUa5CkmLXuz90ziNeh_xeNfs4Ojnd0HA4Ra2j7K-T63kVmSA33zSnZPvW28ZxXuVwIEaDStAgKrpeIsqq8RCECo7ej5KlXS35MOECjvncYDZcC7vMg2THYS-aZORQMAJU45UWiB56" />
+            <div>
+              <p class="text-sm font-semibold text-gray-900 dark:text-white">Isabela Costa</p>
+              <p class="text-xs text-gray-600 dark:text-gray-400">4 meses atrás</p>
+            </div>
+          </div>
+          <div class="flex gap-0.5">
+            <svg class="h-5 w-5 text-primary" fill="currentColor" viewBox="0 0 256 256">
+              <path
+                d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z">
+              </path>
+            </svg>
+            <svg class="h-5 w-5 text-primary" fill="currentColor" viewBox="0 0 256 256">
+              <path
+                d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z">
+              </path>
+            </svg>
+            <svg class="h-5 w-5 text-primary" fill="currentColor" viewBox="0 0 256 256">
+              <path
+                d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z">
+              </path>
+            </svg>
+            <svg class="h-5 w-5 text-primary" fill="currentColor" viewBox="0 0 256 256">
+              <path
+                d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z">
+              </path>
+            </svg>
+            <svg class="h-5 w-5 text-primary" fill="currentColor" viewBox="0 0 256 256">
+              <path
+                d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z">
+              </path>
+            </svg>
+          </div>
+          <p class="text-sm text-gray-600 dark:text-gray-400">"Encontrei tantos artistas novos que amo graças ao
+            Melodia. Recomendo a todos os amantes da música!"</p>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
 </html>
