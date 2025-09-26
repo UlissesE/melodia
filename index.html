@@ -60,13 +60,7 @@
           </svg>
           Ouvir Agora
         </button>
-        <!-- <div class="hero-card flex flex-col gap-5 p-4 border-[1rem] border-gray-900">
-          <h3 class="font-bold">Tocando Agora</h3>
-          <div class="bg-gray-300/20 p-2 rounded-md">
-            <h4 class="text-sm">Payphone</h4>
-            <h5 class="text-xs font-light">Maroom 5</h5>
-          </div>
-        </div> -->
+
       </div>
     </section>
 
@@ -372,7 +366,7 @@
       </div>
     </section>
 
-    <section class="p-10 sm:py-1">
+    <section class="p-10 sm:py-20 bg-slate-900/30">
       <div class="mx-auto max-w-3xl text-center">
         <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">O que nossos usuários
           dizem</h2>
@@ -498,7 +492,7 @@
       </div>
     </section>
 
-    <section class="py-16 sm:py-24">
+    <section class="py-16 sm:py-24 ">
       <div class="mx-auto max-w-2xl text-center">
         <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">Receba novidades e
           ofertas</h2>
@@ -512,6 +506,57 @@
             type="submit">Inscrever-se</button>
         </div>
       </div>
+    </section>
+    <section class="py-16 sm:py-24">
+      <div class="mx-auto max-w-2xl text-center">
+        <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">Entre em contato</h2>
+        <p class="mt-4 text-lg text-gray-600 dark:text-gray-400">Dúvidas, sugestões ou apenas um olá? Adoraríamos ouvir
+          de você.</p>
+      </div>
+      <form action="#" class="mx-auto mt-12 max-w-xl">
+        <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+          <div>
+            <label class="block text-sm font-semibold leading-6 text-gray-900 dark:text-white" for="full-name">Nome
+              completo</label>
+            <div class="mt-2.5">
+              <input autocomplete="name"
+                class="block w-full rounded-md border-0 bg-white/5 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-white/10 placeholder:text-gray-500 focus:ring-2 focus:ring-inset focus:ring-primary dark:bg-white/5 dark:text-white dark:ring-white/10 dark:placeholder:text-gray-400 sm:text-sm sm:leading-6"
+                id="full-name" name="full-name" type="text" />
+            </div>
+          </div>
+          <div>
+            <label class="block text-sm font-semibold leading-6 text-gray-900 dark:text-white"
+              for="phone-number">Telefone</label>
+            <div class="mt-2.5">
+              <input autocomplete="tel"
+                class="block w-full rounded-md border-0 bg-white/5 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-white/10 placeholder:text-gray-500 focus:ring-2 focus:ring-inset focus:ring-primary dark:bg-white/5 dark:text-white dark:ring-white/10 dark:placeholder:text-gray-400 sm:text-sm sm:leading-6"
+                id="phone-number" name="phone-number" type="tel" />
+            </div>
+          </div>
+          <div class="sm:col-span-2">
+            <label class="block text-sm font-semibold leading-6 text-gray-900 dark:text-white" for="email">Email</label>
+            <div class="mt-2.5">
+              <input autocomplete="email"
+                class="block w-full rounded-md border-0 bg-white/5 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-white/10 placeholder:text-gray-500 focus:ring-2 focus:ring-inset focus:ring-primary dark:bg-white/5 dark:text-white dark:ring-white/10 dark:placeholder:text-gray-400 sm:text-sm sm:leading-6"
+                id="email" name="email" type="email" />
+            </div>
+          </div>
+          <div class="sm:col-span-2">
+            <label class="block text-sm font-semibold leading-6 text-gray-900 dark:text-white"
+              for="message">Mensagem</label>
+            <div class="mt-2.5">
+              <textarea
+                class="block w-full rounded-md border-0 bg-white/5 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-white/10 placeholder:text-gray-500 focus:ring-2 focus:ring-inset focus:ring-primary dark:bg-white/5 dark:text-white dark:ring-white/10 dark:placeholder:text-gray-400 sm:text-sm sm:leading-6"
+                id="message" name="message" rows="4"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="mt-10">
+          <button
+            class="block w-full rounded-md hero-button px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+            type="submit">Enviar mensagem</button>
+        </div>
+      </form>
     </section>
   </main>
 </body>
