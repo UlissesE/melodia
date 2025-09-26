@@ -3,10 +3,14 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" href="/cube.png" />
+  <link rel="icon" href="./public/cube.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdn.tailwindcss.com"></script>
   <title>Melodia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./src/css/style.css" />
 </head>
 
@@ -496,17 +500,17 @@
       </div>
     </section>
 
-    <section class="py-16 sm:py-24" id="contato">
-      <div class="mx-auto max-w-2xl text-center">
-        <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">Receba novidades e
+    <section class="py-8 sm:py-16" id="contato">
+      <div class="mx-auto w-full max-w-none text-center px-0 sm:px-2">
+        <h2 class="text-xl sm:text-2xl lg:text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Receba novidades e
           ofertas</h2>
-        <div class="mt-8 flex w-full max-w-md mx-auto">
+        <div class="mt-6 flex flex-col sm:flex-row w-full">
           <label class="sr-only" for="email-address">Email</label>
           <input autocomplete="email"
-            class="form-input flex-auto rounded-l-lg border-0 bg-white/5 px-4 py-3.5 text-gray-900 ring-1 ring-inset ring-white/10 placeholder:text-gray-500 focus:ring-2 focus:ring-inset focus:ring-primary dark:bg-white/5 dark:text-white dark:ring-white/10 dark:placeholder:text-gray-400"
+            class="form-input flex-auto rounded-t-lg sm:rounded-l-lg sm:rounded-t-none border-0 bg-white/5 px-0.5 sm:px-2 py-2.5 text-sm text-gray-900 ring-1 ring-inset ring-white/10 placeholder:text-gray-500 focus:ring-2 focus:ring-inset focus:ring-primary dark:bg-white/5 dark:text-white dark:ring-white/10 dark:placeholder:text-gray-400"
             id="email-address" name="email-address" placeholder="Seu email" required="" type="email" />
           <button
-            class="flex-none rounded-r-lg hero-button px-5 py-3.5 text-sm font-semibold text-white shadow-sm hover:/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+            class="flex-none rounded-b-lg sm:rounded-r-lg sm:rounded-b-none hero-button px-1.5 sm:px-3 py-2.5 text-xs sm:text-sm font-semibold text-white shadow-sm hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
             type="submit">Inscrever-se</button>
         </div>
       </div>
@@ -517,8 +521,8 @@
         <p class="mt-4 text-lg text-gray-600 dark:text-gray-400">Dúvidas, sugestões ou apenas um olá? Adoraríamos ouvir
           de você.</p>
       </div>
-      <form action="#" class="mx-auto mt-12 max-w-xl">
-        <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+      <form action="#" class="mx-auto mt-12 max-w-full sm:max-w-lg">
+        <div class="grid grid-cols-1 gap-x-4 gap-y-6 sm:gap-x-8 sm:grid-cols-2">
           <div>
             <label class="block text-sm font-semibold leading-6 text-gray-900 dark:text-white" for="full-name">Nome
               completo</label>
@@ -608,6 +612,7 @@
       <p class="mt-8 text-sm text-gray-500 dark:text-gray-400">© 2023 Melodia. Todos os direitos reservados.</p>
     </div>
   </footer>
+  <script src="./src/javascript/main.js"></script>
 </body>
 
 </html>

@@ -1,5 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #161022;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  transition: background-color 0.3s ease;
+}
+
+header.scrolled {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .section-hero {
@@ -48,3 +70,4 @@ body {
     max-width: 200px;
   }
 }
+
