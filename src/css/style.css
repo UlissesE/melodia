@@ -26,7 +26,7 @@ header.scrolled {
 
 .section-hero {
   background-image: url("../imgs/hero.png");
-
+  
 }
 
 .hero-card {
@@ -38,7 +38,6 @@ header.scrolled {
 .hero-button {
   background-image: linear-gradient(to right, #27377c, #9b3c77);
   font-weight: bold;
-  width: fit-content;
   box-shadow: 0 4px 15px rgba(39, 55, 124, 0.3);
   transition: all 0.3s ease;
 }
