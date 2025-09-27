@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Newsletter subscription
     const emailInput = document.getElementById('email-address');
-    const subscribeButton = emailInput.nextElementSibling; // Assuming button is next sibling
+    const subscribeButton = emailInput.nextElementSibling;
 
     subscribeButton.addEventListener('click', function(e) {
         e.preventDefault();
