@@ -1,6 +1,6 @@
 # Melodia
 
-**Projeto Acadêmico** - Uma landing page moderna e responsiva para o serviço de streaming de música Melodia, desenvolvida como parte de um projeto acadêmico de desenvolvimento web para a matéria de Front End Design na FIAP. Este projeto demonstra o uso de tecnologias front-end modernas para criar uma experiência visual imersiva e intuitiva.
+**Projeto Acadêmico** - Uma landing page moderna e responsiva para o serviço de streaming de música Melodia, desenvolvida como parte de um projeto acadêmico de desenvolvimento web para a matéria de Front End Design na FIAP. Este projeto demonstra o uso de tecnologias front-end modernas para criar uma experiência visual imersiva e intuitiva. 
 
 ## 📋 Descrição
 
@@ -110,6 +110,8 @@ melodia/
 - **Gradientes**: Indigo/Pink (`#27377c` to `#9b3c77`)
 - **Texto**: Cinza claro para boa legibilidade
 - **Acentos**: Cores vibrantes para botões e destaques
+
+Observação: Todas as imagens foram feitas usando a IA Nano Banana do Google.
 
 ## 📱 Responsividade
 
