@@ -13,6 +13,29 @@ document.addEventListener('DOMContentLoaded', function() {
         lastScrollY = scrollY;
     });
 
+    // Hamburger menu toggle
+    const hamburgerBtn = document.getElementById('hamburger-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    hamburgerBtn.addEventListener('click', function() {
+        mobileMenu.classList.toggle('open');
+    });
+
+    // Close mobile menu when clicking on a link
+    const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+    mobileMenuLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            mobileMenu.classList.remove('open');
+        });
+    });
+
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!hamburgerBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
+            mobileMenu.classList.remove('open');
+        }
+    });
+
     // Newsletter subscription
     const emailInput = document.getElementById('email-address');
     const subscribeButton = emailInput.nextElementSibling; // Assuming button is next sibling
