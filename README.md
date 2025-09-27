@@ -6,6 +6,11 @@
 
 O Melodia revoluciona sua experiência musical com qualidade superior, playlists inteligentes e descobertas incríveis. Esta landing page apresenta os principais recursos do serviço, incluindo streaming de alta qualidade, recomendações personalizadas e descoberta de novos artistas.
 
+## 💻 Link do site
+
+Link do site: 
+- https://ulissese.github.io/melodia/
+
 ## ✨ Funcionalidades
 
 - **Design Responsivo**: Layout adaptável para desktop, tablet e mobile
